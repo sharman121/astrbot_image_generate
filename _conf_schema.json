@@ -1,0 +1,25 @@
+{
+  "api_key": {
+    "description": "中转站 API Key",
+    "type": "string",
+    "hint": "只填写密钥本身，不要包含 Bearer 前缀。",
+    "obvious_hint": true,
+    "default": ""
+  },
+  "api_url": {
+    "description": "中转站生图接口地址",
+    "type": "string",
+    "default": "https://api.apiqik.com/v1/images/generations"
+  },
+  "edit_api_url": {
+    "description": "中转站图生图接口地址",
+    "type": "string",
+    "default": "https://api.apiqik.com/v1/images/edits"
+  },
+  "request_timeout": {
+    "description": "生图请求超时时间（秒）",
+    "type": "int",
+    "hint": "有效范围为 30 至 600 秒。",
+    "default": 480
+  }
+}
