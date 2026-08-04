@@ -1,6 +1,6 @@
 # image_generate
 
-AstrBot 生图插件。支持聊天模型调用 `generate_image` Tool 进行文字生图，调用 `edit_image` Tool 进行图生图，也可以通过 `/tushengtu` 命令手动触发图生图。
+AstrBot 生图插件。支持llm调用 `generate_image` Tool 进行文字生图，调用 `edit_image` Tool 进行图生图，以及通过 `/tushengtu` 命令手动触发图生图。
 
 ## 配置
 
@@ -15,7 +15,7 @@ AstrBot 生图插件。支持聊天模型调用 `generate_image` Tool 进行文�
 
 ## 使用
 
-请在 AstrBot 中启用本插件的 `generate_image` 和 `edit_image` 工具，并确保当前聊天模型支持 Tool Calling。
+请在 AstrBot 中启用本插件的 `generate_image` 和 `edit_image` 工具，并确保当前llm支持 Tool Calling。
 
 文字生图时直接提出要求，ai会根据你的要求写出提示词，例如：
 
