@@ -1,6 +1,6 @@
 # image_generate
 
-AstrBot 生图插件。支持llm调用 `generate_image` Tool 进行文字生图，调用 `edit_image` Tool 进行图生图，以及通过 `/tushengtu` 命令手动触发图生图。
+AstrBot 生图插件。支持llm调用 `generate_image` Tool 进行文字生图，调用 `edit_image` Tool 进行图生图，以及通过 `/tushengtu` 命令直接调用图生图。
 
 ## 配置
 
