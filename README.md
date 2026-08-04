@@ -7,11 +7,11 @@ AstrBot 生图插件。支持聊天模型调用 `generate_image` Tool 进行文�
 安装插件后，在 AstrBot WebUI 的插件配置中填写：
 
 - `api_key`：中转站 API Key，不要包含 `Bearer` 前缀。
-- `api_url`：生图接口地址，默认使用 `https://api.apiqik.com/v1/images/generations`。
-- `edit_api_url`：图生图接口地址，默认使用 `https://api.apiqik.com/v1/images/edits`。
+- `api_url`：生图接口地址，一般使用 `中转站url/v1/images/generations`。
+- `edit_api_url`：图生图接口地址，一般使用 `中转站url/v1/images/edits`。
 - `request_timeout`：请求超时时间，默认 480 秒。
 
-模型固定为 `gpt-image-2`，图片尺寸固定为 `1024x1536`，每次生成 1 张图片。
+模型固定为 `gpt-image-2`，图片尺寸默认为 `1024x1536`，每次生成 1 张图片。
 
 ## 使用
 
@@ -34,5 +34,3 @@ AstrBot 生图插件。支持聊天模型调用 `generate_image` Tool 进行文�
 ```
 
 插件会把全部参考图片以 `image[]` 字段上传。支持 JPEG、PNG 和 WebP；单张图片最大 25 MB，所有参考图片合计最大 50 MB。
-
-`edit_image` Tool 可以使用第一张参考图的尺寸作为动态候选。参考图的宽高如果不是 16 的倍数，会分别调整到最接近的 16 倍数后再传给接口，例如 `1001x777` 会调整为 `1008x784`。三个基础候选尺寸 `1024x1024`、`1024x1536`、`1536x1024` 始终保留。
