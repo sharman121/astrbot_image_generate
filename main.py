@@ -13,8 +13,8 @@ from astrbot.api.star import Context, Star, register
 from astrbot.core.star.filter.command import GreedyStr
 
 
-DEFAULT_API_URL = "https://api.apiqik.com/v1/images/generations"
-DEFAULT_EDIT_API_URL = "https://api.apiqik.com/v1/images/edits"
+DEFAULT_API_URL = ""
+DEFAULT_EDIT_API_URL = ""
 MODEL = "gpt-image-2"
 IMAGE_SIZE = "1024x1536"
 ALLOWED_IMAGE_SIZES = frozenset({"1024x1024", "1024x1536", "1536x1024"})
